@@ -1,0 +1,45 @@
+                                                              // ASSIGNMENT NO 1
+// Person 
+//nm,age,wt
+//1 public 
+//2 function 
+
+
+
+package a;
+
+public class Function {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		person p1= new person();
+		p1.personName="Diwesh";
+		p1.setPeson(20,65);
+		p1.dispPerson();
+		
+		person p2= new person();
+		p2.personName="Ram";
+		p2.setPeson(40,80);
+		p2.dispPerson();
+		
+	}
+
+}
+
+
+class person{
+	String personName;
+private	int personAge;
+private	float personWeight;
+
+void setPeson(int age,float weight) {
+	personAge=age;
+	personWeight=weight;
+	
+}
+
+void dispPerson() {
+	System.out.println("Person Name "+personName+",Age"+personAge+",Weight"+personWeight);
+}
+};
