@@ -1,0 +1,64 @@
+                                                      //ASSIGNMENT 1 QUESTION 2
+
+//Person 
+//nm,age,wt
+//1 constructor (Default, Parameter, Copy)
+
+package a;
+
+public class Personconstructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+	personCons e1 = new personCons();
+	
+	personCons e2 = new personCons("Diwesh",20,65);
+	
+	personCons e3 = new personCons(e1);
+	
+	e1.dispCons();
+	e2.dispCons();
+	e3.dispCons();
+	
+	
+	
+	}
+
+}
+
+
+class personCons{
+	
+private	String personConsName;
+	private	int personConsAge;
+	private	float personConsWeight;	
+	
+	public personCons() {
+		personConsName="Aman";
+		personConsAge=18;
+		personConsWeight=50;
+		
+		System.out.println("Default Cons Called");
+		};
+
+public personCons(String name,int age,float weight) {
+	personConsName=name;
+	personConsAge=age;
+	personConsWeight=weight;
+}
+
+
+public personCons(personCons person) {
+	personConsName= person.personConsName;
+	personConsAge= person.personConsAge;
+	personConsWeight=person.personConsWeight;
+}
+
+void dispCons() {
+	System.out.println("Person Name "+personConsName+ ",Age"+personConsAge+",Weight"+personConsWeight);
+}
+
+
+}
