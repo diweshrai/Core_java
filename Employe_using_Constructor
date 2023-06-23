@@ -1,0 +1,68 @@
+//ASSIGNMENT 1st Question 2nd
+Emp
+nm,age,wt,sal
+1 cer
+2- Two emp sal add- without using public method
+Emp e1=chahat 21 50000
+Emp e2=simran 21 40000
+
+
+
+package a;
+
+public class First {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		employe emp01 = new employe("chatat",21,65, 50000);
+		employe emp02 = new employe("Simran",21,60, 40000);
+		
+		
+		
+		emp01.disp();
+         emp02.disp();
+		
+float total = emp01.getEmployeSal()+emp02.getEmployeSal();  
+  
+	System.out.println("Total Salary of employe are "+total);
+	}
+
+}
+
+ class employe{
+	 
+private String employeName;	 
+private int employeAge;
+private float employeWeight; 
+private float employeSal;
+
+
+
+	  public employe(String name, int age, float weight,float sal) {
+		  employeName=name;
+		  employeAge=age;
+		  employeWeight=weight;
+		  employeSal= sal;
+		  
+	  }	 
+	  
+	  
+	  public float getEmployeSal() {
+		return employeSal;
+	}
+
+
+	public void setEmployeSal(float employeSal) {
+		this.employeSal = employeSal;
+	}
+
+
+
+	void disp() {
+	System.out.println("Employe Name is "+ employeName +"Age "+ employeAge+"Weight "+employeWeight+" and sal is"
+		  		+employeSal);
+	
+
+	}
+	  }
